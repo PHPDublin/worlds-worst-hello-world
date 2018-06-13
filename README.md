@@ -6,6 +6,12 @@ Write the worst implementation of hello world you possibly can in an hour. That'
 ## The prize:
 A giant homemade elephphant pillow (seriously, I'm already jealous of the winner).
 
+## Requirements
+- A computer
+- PHP ^5.6
+- Composer
+- A desire to inflict terrible code upon your fellow devs
+
 ## How to play
 1. Decide wether you want to compete alone or as a team
 1. Fork this repo
