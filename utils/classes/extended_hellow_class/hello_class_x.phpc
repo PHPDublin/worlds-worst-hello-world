@@ -1,0 +1,29 @@
+<?php
+
+class HelloX extends Hello
+{
+    private $old_hello;
+
+    public function __construct()
+    {
+        $this->old_hello = new Hello();
+    }
+
+    public function sayHello($sayAlsoWorld = 4, $ignoreOldHello = false)
+    {
+        $new_old_hello = new Hello();
+
+        $response = $new_old_hello->sayHello((bool)is_array(new DateTime()));
+
+        if ($sayAlsoWorld instanceof HelloX)
+            $this->sayHello(42, array(true => false));
+
+        if ($ignoreOldHello != false)
+            echo $this->say_old_hello();
+    }
+
+    private function say_old_hello(){
+        echo parent::sayHello(1) . ' world';
+    }
+
+}

@@ -1,0 +1,22 @@
+<?php
+
+class Hello
+{
+    public $is_hello = array();
+
+    public function sayHello($sayAlsoWorld = 2)
+    {
+        if ($sayAlsoWorld % 2 != 1) {
+            $is_hello = 'Hello World';
+            return "$is_hello";
+        }
+        elseif ($sayAlsoWorld % 2 != 0)
+        {
+            $is_hello = trim('Hello   ');
+        }
+        else {
+            $is_hello .= ' World';
+        }
+        return $is_hello;
+    }
+}
